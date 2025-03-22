@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorpresa  🌼</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #fff8dc, #fceabb);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3em;
+      color: #d4af37;
+      animation: aparecer 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #555;
+      margin: 20px;
+      animation: aparecer 3s ease-in-out;
+    }
+
+    .flores {
+      position: absolute;
+      top: -50px;
+      font-size: 2em;
+      animation: caer 10s linear infinite;
+      user-select: none;
+    }
+
+    @keyframes caer {
+      0% { top: -50px; opacity: 1; }
+      100% { top: 100vh; opacity: 0; }
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .imagen {
+      margin-top: 30px;
+    }
+
+    .imagen img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      animation: aparecer 4s ease-in-out;
+    }
+
+    /* Flores cayendo en distintas posiciones */
+    .flores:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .flores:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .flores:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .flores:nth-child(4) { left: 60%; animation-delay: 1s; }
+    .flores:nth-child(5) { left: 75%; animation-delay: 3s; }
+    .flores:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+  </style>
+</head>
+<body>
+
+  <h1>🌼 Flores Amarillas para Antonella 🌼</h1>
+  <p>Te extraño mucho y pensé en darte este detalle ahora que voy metido en este mundo de programación.<br>Es por eso que antes de terminar la noche, quiero regalarte estas flores amarillas 🌼💛</p>
+
+  <div class="imagen">
+    <img src="amarillo.jpg" alt="Flores amarillas">
+  </div>
+
+  <!-- Flores cayendo (emojis) -->
+  <div class="flores">🌼</div>
+  <div class="flores">🌼</div>
+  <div class="flores">🌼</div>
+  <div class="flores">🌼</div>
+  <div class="flores">🌼</div>
+  <div class="flores">🌼</div>
+
+</body>
+</html>
